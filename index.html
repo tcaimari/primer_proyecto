@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenidos a entoni</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
@@ -133,8 +134,29 @@ unicode: "f1e2"
         <section>
             <h2>Contacto</h2>
             <form action="">
-              <legend>Contáctame enviando tus datos</legend>
-              <label for="">Nombre:</label>
+              <fieldset>
+                <legend>Contáctame enviando tus datos</legend>
+                <div>
+                  <label for="">Nombre:</label>
+                  <input type="text" name="nombre">
+                </div>
+                <div>
+                  <label for="">Teléfono:</label>
+                  <input type="tel" name="Teléfono" id="">
+                </div>
+                <div>
+                  <label for="">Correo:</label>
+                  <input type="email" name="correo" id="">
+                </div>
+                <div>
+                  <label for="">Mensaje:</label>
+                  <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                  <input type="submit" value="Enviar">
+                </div>
+              </fieldset>
+
             </form>
         </section>
     </main>
