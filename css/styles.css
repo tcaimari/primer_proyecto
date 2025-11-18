@@ -1,6 +1,9 @@
 :root{
+    --blanco:#ffffff;
+    --oscuro:#03053a;
     --primario: #187e29;
     --secundario: #0077b6;
+    --gris: #d2d7db;
 }
 
 html{
@@ -21,7 +24,7 @@ contenedor{
 }
 
 .bg-secundario{
-    background-color: #187e29;
+    background-color: var(--primario);
 }
 
 h1{
@@ -34,13 +37,13 @@ h2{
 
 
 .Titulo{
-    color: #0077b6;
+    color: var(--secundario);
     text-align: center;
     font-size: 3.8rem;
 }
 
 .Titulo span{
-    color: #187e29;
+    color: var(--primario);
     font-size: 2rem;
 }
 
@@ -49,9 +52,9 @@ p{
 }
 
 .navegacion-principal{
-    background-color: #187e29;
+    background-color: var(--primario);
 }
 
 .navegacion-principal a{
-    color: red;
+
 }
