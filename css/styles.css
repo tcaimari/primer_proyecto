@@ -1,6 +1,37 @@
-body{
-    
+:root{
+    --primario: #187e29;
+    --secundario: #0077b6;
 }
+
+html{
+    font-size: 62.5%;
+}
+
+
+body{
+    font-family: "Roboto",sans-serif;
+    font-size: 16px;
+}
+
+
+/*utilidades*/
+contenedor{
+    width: 800px;
+    margin: 0 auto;
+}
+
+.bg-secundario{
+    background-color: #187e29;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+h2{
+    font-size: 1.8rem;
+}
+
 
 .Titulo{
     color: #0077b6;
@@ -11,4 +42,16 @@ body{
 .Titulo span{
     color: #187e29;
     font-size: 2rem;
+}
+
+p{
+    font-size: 2.6rem;
+}
+
+.navegacion-principal{
+    background-color: #187e29;
+}
+
+.navegacion-principal a{
+    color: red;
 }
