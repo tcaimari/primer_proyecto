@@ -17,8 +17,25 @@ body{
 }
 
 
+h1{
+    font-size: 3.8rem;
+}
+
+h2{
+    font-size: 3.2rem;
+}
+
+
+h3{
+    font-size: 2.6rem;
+}
+
+h1,h2,h3{
+    text-align: center;
+}
+
 /*utilidades*/
-contenedor{
+.contenedor{
     width: 75%;
     margin: 0 auto;
 }
@@ -27,12 +44,26 @@ contenedor{
     background-color: var(--primario);
 }
 
-h1{
-    font-size: 2.5rem;
+.boton{
+    background-color: var(--primario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 5rem;
+    width: 90%;
+    text-align: center;
+    border: none;
 }
 
-h2{
-    font-size: 1.8rem;
+
+@media (min-width: 480px) {
+    .boton{
+        width: auto;
+    }
 }
 
 
@@ -47,9 +78,6 @@ h2{
     font-size: 2rem;
 }
 
-p{
-    font-size: 2.6rem;
-}
 
 .navegacion-principal{
     display: flex;
@@ -80,4 +108,33 @@ p{
 .navegacion-principal a:hover{
     color: var(--oscuro);
     background-color: var(--secundario);
+}
+
+/*estilos para monitor*/
+.monitor{
+    background-image: url("../imagenes/monitor.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45rem;
+    position: relative;
+}
+
+.contenido-monitor  {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: var(--blanco);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.informacion{
+    display: flex;
+    justify-content: center;
 }
